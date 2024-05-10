@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\PC\Desktop\projet\style\style.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Resto_Jardin des délices </title>
+<body>
+    <header>
+        <a href="#" class="logo"><span>R</span>esto_<i><span>J</span>ardin des délices</i> </a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navbar">
+            <li><a href="acceuil1.html" onclick="toggleMenu();">Accueil</a></li>
+            <li><a href="menu.html"onclick="toggleMenu();">Menu</a></li>
+            <li><a href="contact.html" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <section class="contact" id="contact">
+        <div class="titre noir">
+            <h2 class="titre-text"><span>C</span>ontact</h2>
+            <p>Vous avez envie de nous faire part de vos impressions, suggestions ou questions ? N'hésitez pas à nous contacter !</p>
+        </div>
+        <div class="social-media-links">
+            <a href="https://www.facebook.com/" class="social-media-icon facebook"><b>facebook</b></a>
+            <a href="https://twitter.com/?lang=en" class="social-media-icon twitter">  <b>Twitter</b> </a>
+            <a href="https://www.instagram.com/" class="social-media-icon instagram"> <b>instagram</b></a>
+          </div>
+        <div class="contactform">
+            <h3>Envoyer un message</h3>
+            <div class="inputboite">
+                <input type="text" placeholder="Nom">
+            </div>
+            <div class="inputboite">
+               <input type="text" placeholder="email">
+            </div>
+            <div class="inputboite">
+               <textarea placeholder="message"></textarea>
+            </div>
+            <div class="inputboite">
+                <input type="submit" value="envoyer">
+            </div>
+        </div>
+        <div>
+           <h3><b>Retrouvez-nous facilement ! </b></h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.095625618482!2d4.039892274693525!3d36.72026457220342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128dc7d9513f8cc3%3A0xf802fb3864bfae55!2sRestaurant%20Capri!5e0!3m2!1sen!2sdz!4v1714770827937!5m2!1sen!2sdz" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+       </section>
+    
+   
+   
+    <div class="copyright">
+        <p><b>&copy; 2024 Restaurant Le jardin des délices </b></p>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header =document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0 );
+        });
+   
+        function toggleMenu(){
+            const tmenuToggle = document.querySelector('.menuToggle');
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+    </script>
+   </body>
+   </html>
+         
